@@ -1,0 +1,213 @@
+/* PC */
+
+@media (min-width: 1024px) {
+    .about-us__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+    }
+}
+
+
+/* Tablet & Mobile */
+
+@media (max-width: 1023px) {
+    .header__logo-img {
+        margin-right: 109px;
+    }
+
+    .header__log-in {
+        margin-left: 113px;
+    }
+
+    .about-us__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-us__header {
+        background-image: url(../image/Knowledge-pana.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 75%;
+        width: 100%;
+        font-size: 5.2rem;
+    }
+
+    .about-us__header--mt {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .join-now {
+        margin: 16px auto 0;
+        padding: 7px 13px;
+        text-transform: uppercase;
+        min-width: 382px;
+    }
+}
+
+/* Tablet */
+
+@media (min-width: 740px) and (max-width: 1023px) {
+
+    .hide-on-tablet {
+        display: none;
+    }
+
+    .home-btn {
+        display: flex;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 739px) {
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .show-on-mobile {
+        display: block;
+    }
+
+    .nav-bar {
+        height: 44px;
+        margin: 0 12px;
+    }
+
+    .header__logo-img {
+        width: 59.33px;
+        height: 24px;
+    }
+
+    .header__search-box {
+        flex: 0;
+        padding: 4px;
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        padding: 3px 0;
+        height: 20px;
+    }
+
+    .header__search-box:hover > .header__search-text {
+        width: 236px;
+    }
+
+    .header__search-text {
+        width: 0px;
+        padding: 0;
+        text-align: left;
+        font-size: 1.2rem;
+        transition: 0.4s;
+    }
+
+    .header__search-text::placeholder {
+        text-align: left;
+    }
+
+    .header__search-icon {
+        box-sizing: border-box;
+        display: block;
+        font-size: 1.35rem;
+        background: #E6E6E6;
+        border-radius: 12px 12px 0px 12px;
+        padding: 4.15px 3.5px 2px 4.15px;
+        transition: 0.4s;
+    }
+
+    .header__user {
+        margin-left: 4px;
+        color: #666;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .header__logo-img {
+        margin-right: 0;
+    }
+
+    .home-btn {
+        display: flex;
+        border-radius: 50%;
+        right: 11px;
+        bottom: 49px;
+    }
+
+    .about-us {
+        margin: 12px 11px 0;
+    }
+
+    .about-us__header, .join-for__header {
+        font-size: 2.6rem;
+        line-height: calc(1.2 * 2.6rem);
+    }
+    
+    .about-us__content {
+        margin-top: 32px;
+    }
+
+    .join-now {
+        margin: 0;
+        min-width: 151px;
+        margin-left: auto;
+        margin-top: 4px;
+    }
+
+    .join-for {
+        margin: 0 12px;
+    }
+
+    .join-for__header {
+        margin-bottom: 0;
+        margin-top: 21px;
+    }
+
+    .join-for__wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    .join-for__wrapper:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+
+    .join-for__content-heading {
+        margin-top: 0;
+    }
+
+    .join-for__content-img {
+        height: 168px;
+        flex: 1;
+    }
+
+    .footer {
+        margin-top: 24px;
+    }
+
+    .footer__end-line {
+        height: 55px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .footer-register, .footer-aside {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
+    .footer-aside {
+        margin-top: 0;
+    }
+
+    .footer-languages-and-policy:first-child {
+        border-bottom: 2px solid #fff;
+    }
+
+    .footer__link {
+        color: #fff;
+    }
+}

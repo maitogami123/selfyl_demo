@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fonts/unicons-regular-straight/uicons-regular-straight.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <title>Sefyl</title>
+</head>
+<body>
+    <div class="app">
+        <span id="to-head"></span>
+        <a href="#to-head" class="home-btn">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+        
+            
+        <header id="header" class="header">
+            <div class="grid wide">
+                <nav class="nav-bar">
+                    <div class="header__logo">
+                        <a href="#" class="header__logo-link">
+                            <svg width="89" height="36" viewBox="0 0 89 36" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="header__logo-img">
+                                <rect width="89" height="36" fill="url(#pattern0)"/>
+                                <defs>
+                                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0" transform="translate(-0.000441002) scale(0.00138053 0.00341297)"/>
+                                </pattern>
+                                <image id="image0" width="725" height="293" xlink:href="data:image/png;base64,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"/>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="header__search-box">
+                        <div class="header__search-icon"><i class="fas fa-search"></i></div>
+                        <input type="text" name="search" class="header__search-text" id="" placeholder="Tìm kiếm trên Selfyl"> 
+                    </div>
+
+                    <a href="#" class="header__log-in hide-on-mobile">
+                        Đăng nhập
+                    </a>
+                    <a href="#" class="js-header__user header__user show-on-mobile">
+                        <i class="header__user-icon fas fa-user-circle"></i>
+                    </a>
+                </nav>
+            </div>
+        </header>
+
+        <div class="app__container">
+            <div class="grid wide">
+                <div class="row about-us">
+                    <div class="col l-12 m-12 c-12">
+                        <div class="row">
+                            <div class="col l-6 m-12 c-12 about-us__wrapper">
+                                <h2 class="about-us__header">
+                                    Share everything 
+                                    <br>
+                                    for your life
+                                </h2>
+        
+                                <p class="about-us__content body-1">
+                                    Sefyl là một cộng đồng tập trung những con người ham tìm tòi, học hỏi không ngừng tiến lên phía trước. Bạn không cần phải là một người xuất sắc, hoàn hảo chỉ cần bạn có một trái tim kiên định và một khối óc không ngừng tiến lên Sefyl sẽ cùng bạn khai phá tiềm năng, cùng bạn phát triển mỗi ngày. 
+                                    <br>
+                                    <br>
+                                    Sefyl hoạt động với phương châm “Share everything for your life.” Với phương châm này Sefyl mong rằng sẽ nơi mà mọi người có thể thỏa mái chia sẻ những kinh nghiệm, hiểu biết của mình trong đời sống cũng như trong công việc và các lĩnh vực mình am hiểu để cùng nhau xây dựng một cộng đồng tri thức văn minh, tốt đẹp.
+                                </p>
+        
+                                <button class="btn join-now BUTTON">
+                                    Tham gia ngay
+                                </button>
+                            </div>
+        
+                            <div class="col l-6 m-0 c-0">
+                                <img src="./assets/image/Knowledge-pana.svg" alt="" class="about-us__img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row join-for">
+                        <div class="col l-12 m-12 c-12">
+                            <h2 class="join-for__header">Hãy tham gia Sefyl để</h2>
+                        </div>
+
+                        <div class="row large-gutter">
+                            <div class="col l-3 m-6 c-12 join-for__wrapper">
+                                <img src="./assets/image/Book lover-bro.svg" alt="" class="join-for__content-img">
+                                <div class="join-for__content">
+                                    <h6 class="join-for__content-heading">Tiến bộ hơn mỗi ngày</h6>
+                                    <p class="join-for__content-desc body-1">
+                                        <br>  
+                                        Tham gia Sefyl để cập nhật kiến thức mới cũng như ôn lại những kiến thức cũ
+                                         từ lâu bạn đã không đụng đến.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col l-3 m-6 c-12 join-for__wrapper">
+                                <img src="./assets/image/Webinar-amico.svg" alt="" class="join-for__content-img">
+                                <div class="join-for__content">
+                                    <h6 class="join-for__content-heading">Kết nối với chuyên gia</h6>
+                                    <p class="join-for__content-desc body-1">
+                                        <br>  
+                                        Tham gia Sefyl bạn sẽ được tiếp xúc, kết nối với những người giỏi trên khắp thế giới,
+                                         được kết bạn giao lưu và mở rộng các mối quan hệ của chính bạn.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col l-3 m-6 c-12 join-for__wrapper">
+                                <img src="./assets/image/Nerd-amico.svg" alt="" class="join-for__content-img">
+                                <div class="join-for__content">
+                                    <h6 class="join-for__content-heading">Tìm kiếm thông tin</h6>
+                                    <p class="join-for__content-desc body-1">
+                                        <br>  
+                                        Tham gia Sefyl là cách tốt nhất để tìm kiếm các thông tin được chia sẻ rộng rãi 
+                                        và được nhiều người kiểm tra để góp phần tăng độ chính xác và đáng tin cậy.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col l-3 m-6 c-12 join-for__wrapper">
+                                <img src="./assets/image/Taking notes-bro.svg" alt="" class="join-for__content-img">
+                                <div class="join-for__content">
+                                    <h6 class="join-for__content-heading">Không gian học tập tốt</h6>
+                                    <p class="join-for__content-desc body-1">
+                                        <br>  
+                                        Sefyl chính là một không gian học tập hoàn hảo. Hạn chế bút viết, tìm kiếm mentor,
+                                         tìm hiểu các thông tin mới lạ và không kém phần thú vị.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="grid wide footer__break-line">
+                <div class="row footer-register">
+                    <div class="col l-5 m-6 c-12">
+                        <h4 class="footer-register__header">Đăng ký</h4>
+                        <p class="footer-register__slogan body-1">Để tốt hơn mỗi ngày</p>
+                        <form class="register-form" id = "register-form">
+                            <div class="form-group">
+                                <input type="text" rules="required" name="user-name" class="form-control"  placeholder="Họ và tên">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text"  rules="email" name="user-email" class="form-control"  placeholder="Email">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="password" rules="min:6" name="user-password" class="form-control"  placeholder="Mật khẩu">
+                            </div>
+                        </form>
+                        <button type="submit" class="btn BUTTON submit-btn">Đăng kí</button>
+                    </div>
+
+                    <div class="col l-4 l-o-3 m-6 c-0">
+                        <div class="footer-aside">
+                            <ul class="footer-languages-and-policy">
+                                <li class="footer__item"><a class="footer__link footer__link--active OVERLINE" href="">Tiếng Việt</a></li>
+                                <li class="footer__item"><a class="footer__link OVERLINE" href="">Tiếng Anh</a></li>
+                                <li class="footer__item"><a class="footer__link OVERLINE" href="">Tiếng Nhật</a></li>
+                            </ul>
+                            <ul class="footer-languages-and-policy">
+                                <li class="footer__item"><a class="footer__link OVERLINE" href="">Điều khoản</a></li>
+                                <li class="footer__item"><a class="footer__link OVERLINE" href="">Quyền riêng tư</a></li>
+                                <li class="footer__item"><a class="footer__link OVERLINE" href="">Quảng cáo</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid footer__end-line">
+                <div class="row">
+                    <div class="col l-0 m-0 c-12">
+                        <div class="footer-aside">
+                            <ul class="footer-languages-and-policy">
+                                <li class="footer__item"><a class="footer__link footer__link--active OVERLINE" href="">Tiếng Việt</a></li>
+                                <li class="footer__item"><a class="footer__link OVERLINE" href="">Tiếng Anh</a></li>
+                                <li class="footer__item"><a class="footer__link OVERLINE" href="">Tiếng Nhật</a></li>
+                            </ul>
+                            <ul class="footer-languages-and-policy">
+                                <li class="footer__item"><a class="footer__link OVERLINE" href="">Điều khoản</a></li>
+                                <li class="footer__item"><a class="footer__link OVERLINE" href="">Quyền riêng tư</a></li>
+                                <li class="footer__item"><a class="footer__link OVERLINE" href="">Quảng cáo</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <div class="js-modal modal">
+        <ul class="js-modal-list modal-list__container open">
+            <li class="modal-list__item js-modal-list__login BUTTON">ĐĂNG NHẬP</li>
+            <li class="modal-list__item js-modal-list__back BUTTON">Quay lại</li>
+            <li class="modal-list__item js-modal-list__back BUTTON">Đọc không cần tài khoản</li>
+        </ul>
+
+            <div class="js-modal-container modal-container">
+                <div class="modal-container__header">
+                    <h4 class="">Đăng nhập</h4>
+                    <p class="body-1">Để có trải nghiệm tốt hơn</p>
+                </div>
+                <div class="modal-container__input">
+                    <input type="email" name="" class="modal-user-input" placeholder="Email hoặc số điện thoại">
+                    <input type="password" name="" class="modal-user-input" placeholder="Mật khẩu">
+                </div>
+                <button type="submit" class="modal-btn">Khám phá ngay nào</button>
+                <a href="#" class="modal-container__forgot-password">Quên mật khẩu?</a>
+                <hr>
+                <p class="body-1" style="margin-top: 16px; margin-bottom: 24px;">Bạn chưa có tài khoản?</p>
+                <a href="#" class="modal-container__create-account">Tạo tài khoản mới</a>
+            </div>
+    </div>
+
+    <script src="./assets/JS/validator.js"></script>
+    <script>
+        var form = new Validator('#register-form');
+    </script>
+    <script>
+        const userLogin = document.querySelector('.js-header__user');
+        const modal = document.querySelector('.js-modal');
+        const modalList = document.querySelector('.js-modal-list');
+        const modalContainer = document.querySelector('.js-modal-container');
+        const login = document.querySelector('.js-modal-list__login');
+        const userSelection = document.querySelectorAll('.js-modal-list__back');
+        
+        function openList() {
+            modal.classList.add('open');
+            modalList.classList.add('open');
+        }
+        
+        function closeList() {
+            modal.classList.remove('open');
+            modalList.classList.remove('open');
+        }
+        
+        function showLoginModal() {
+            closeList();
+            modal.classList.add('login');
+            modalContainer.classList.add('open');
+        }
+
+        function hideLoginModal() {
+            modal.classList.remove('login');
+            modalContainer.classList.remove('open');
+        }
+        
+        userLogin.addEventListener('click', openList);
+
+        for (userSelect of userSelection) {
+            userSelect.addEventListener('click', closeList);
+        }
+
+        modal.addEventListener('click', closeList);
+
+        modalList.addEventListener('click', function(event){
+          event.stopPropagation();
+        })
+
+        login.addEventListener('click', showLoginModal);
+        // lắng nghe hành vi click của người dùng để tắt hộp thoại đăng nhập
+        modal.addEventListener('click', hideLoginModal);
+        // chặn sự nổi bọt. Ví dụ như bấm vào phần tử trong mdoal không tắt đi modal
+        modalContainer.addEventListener('click', function(event){
+          event.stopPropagation();
+        })
+
+        </script>
+</body>
+</html>
